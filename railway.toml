@@ -1,13 +1,10 @@
 [build]
-builder = "nixpacks"
-buildCommand = "npm install && npm run build --workspace=packages/shared-types && npm run build --workspace=apps/scraper-backend && cd apps/scraper-backend && npx playwright install chromium --with-deps"
-
-[build.env]
-NIXPACKS_NODE_VERSION = "22"
+builder = "dockerfile"
+dockerfilePath = "Dockerfile"
 
 [deploy]
 startCommand = "node apps/scraper-backend/dist/index.js"
 healthcheckPath = "/health"
-healthcheckTimeout = 60
+healthcheckTimeout = 120
 restartPolicyType = "on-failure"
 restartPolicyMaxRetries = 3
