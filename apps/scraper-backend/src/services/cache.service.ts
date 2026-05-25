@@ -1,6 +1,6 @@
 import { supabase } from '../lib/supabase.js';
 import { logger } from '../lib/logger.js';
-import type { CacheStatus, SearchRow } from '@gmaps-scraper/shared-types';
+import type { CacheStatus, SearchRow } from '../types/shared.js';
 
 const CACHE_TTL_DAYS = parseInt(process.env.CACHE_TTL_DAYS ?? '3', 10);
 

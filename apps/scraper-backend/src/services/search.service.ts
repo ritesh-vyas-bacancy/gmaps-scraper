@@ -3,7 +3,7 @@ import { checkCache, getCachedSearch, saveSearch, updateSearchMeta } from './cac
 import { runScraper } from './scraper.service.js';
 import { saveBusinesses, getBusinesses } from './business.service.js';
 import { logger } from '../lib/logger.js';
-import type { SearchResponse, PaginationParams } from '@gmaps-scraper/shared-types';
+import type { SearchResponse, PaginationParams } from '../types/shared.js';
 
 export async function executeSearch(
   category: string,

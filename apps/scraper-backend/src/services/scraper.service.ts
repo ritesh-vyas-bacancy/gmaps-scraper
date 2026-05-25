@@ -1,5 +1,5 @@
 import { chromium, Browser, BrowserContext, Page } from 'playwright';
-import type { Business, ScraperResult } from '@gmaps-scraper/shared-types';
+import type { Business, ScraperResult } from '../types/shared.js';
 import { randomDelay } from '../lib/helpers.js';
 import { getRandomUserAgent, getRandomViewport } from '../lib/userAgents.js';
 import { parseRating, parseReviewCount, extractCoordinates, truncate } from '../lib/helpers.js';

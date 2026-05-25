@@ -6,7 +6,7 @@ import { LoadingOverlay } from './LoadingOverlay';
 import { ResultsSection } from '../results/ResultsSection';
 import { searchBusinesses } from '@/lib/api';
 import { toast } from '@/components/ui/toaster';
-import type { SearchResponse } from '@gmaps-scraper/shared-types';
+import type { SearchResponse } from '@/lib/types';
 
 export function SearchSection() {
   const [isLoading, setIsLoading] = useState(false);

@@ -5,7 +5,7 @@ import type {
   Business,
   PaginationParams,
   ExportFormat,
-} from '@gmaps-scraper/shared-types';
+} from '@/lib/types';
 
 const API_URL = process.env.NEXT_PUBLIC_API_URL ?? 'http://localhost:4000';
 

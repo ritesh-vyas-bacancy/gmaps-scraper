@@ -2,7 +2,7 @@ import * as XLSX from 'xlsx';
 import { supabase } from '../lib/supabase.js';
 import { getAllBusinesses } from './business.service.js';
 import { logger } from '../lib/logger.js';
-import type { Business, ExportFormat } from '@gmaps-scraper/shared-types';
+import type { Business, ExportFormat } from '../types/shared.js';
 
 interface ExportResult {
   buffer: Buffer;

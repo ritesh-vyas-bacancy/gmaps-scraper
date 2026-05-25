@@ -1,6 +1,6 @@
 import { supabase } from '../lib/supabase.js';
 import { logger } from '../lib/logger.js';
-import type { Business, BusinessRow, PaginatedResponse, PaginationParams } from '@gmaps-scraper/shared-types';
+import type { Business, BusinessRow, PaginatedResponse, PaginationParams } from '../types/shared.js';
 
 /** Bulk-insert businesses for a search, deleting old ones first on refresh */
 export async function saveBusinesses(searchId: string, businesses: Business[]): Promise<void> {

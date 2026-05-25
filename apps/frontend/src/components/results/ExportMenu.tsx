@@ -6,7 +6,7 @@ import { Button } from '@/components/ui/button';
 import { exportResults } from '@/lib/api';
 import { downloadBlob } from '@/lib/utils';
 import { toast } from '@/components/ui/toaster';
-import type { ExportFormat } from '@gmaps-scraper/shared-types';
+import type { ExportFormat } from '@/lib/types';
 
 interface ExportMenuProps {
   searchId: string;

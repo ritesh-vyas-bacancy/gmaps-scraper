@@ -6,7 +6,7 @@ import { Card, CardContent } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
 import { BusinessTable } from './BusinessTable';
 import { ExportMenu } from './ExportMenu';
-import type { SearchResponse, Business } from '@gmaps-scraper/shared-types';
+import type { SearchResponse, Business } from '@/lib/types';
 
 interface ResultsSectionProps {
   results: SearchResponse;

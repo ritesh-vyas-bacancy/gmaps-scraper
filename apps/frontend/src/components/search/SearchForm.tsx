@@ -11,7 +11,7 @@ import { Label } from '@/components/ui/label';
 import { Switch } from '@/components/ui/switch';
 import { Card, CardContent } from '@/components/ui/card';
 import { cn } from '@/lib/utils';
-import { DEFAULT_CATEGORIES } from '@gmaps-scraper/shared-types';
+import { DEFAULT_CATEGORIES } from '@/lib/types';
 
 const schema = z.object({
   category: z.string().min(1, 'Category is required').max(100),

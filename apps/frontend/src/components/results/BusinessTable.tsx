@@ -31,7 +31,7 @@ import { Badge } from '@/components/ui/badge';
 import { Skeleton } from '@/components/ui/skeleton';
 import { cn, formatNumber, formatRating, truncateUrl } from '@/lib/utils';
 import { toast } from '@/components/ui/toaster';
-import type { Business } from '@gmaps-scraper/shared-types';
+import type { Business } from '@/lib/types';
 
 const columnHelper = createColumnHelper<Business>();
 

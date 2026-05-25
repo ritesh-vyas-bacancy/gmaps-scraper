@@ -1,7 +1,9 @@
 {
   "permissions": {
     "allow": [
-      "PowerShell($env:PATH = [System.Environment]::GetEnvironmentVariable\\(\"PATH\",\"Machine\"\\) + \";\" + [System.Environment]::GetEnvironmentVariable\\(\"PATH\",\"User\"\\); gh auth status 2>&1)"
+      "PowerShell($env:PATH = [System.Environment]::GetEnvironmentVariable\\(\"PATH\",\"Machine\"\\) + \";\" + [System.Environment]::GetEnvironmentVariable\\(\"PATH\",\"User\"\\); gh auth status 2>&1)",
+      "Bash(sed -i '/\"@gmaps-scraper\\\\/shared-types\"/d' \"d:/claude-code-projects/scraper/apps/scraper-backend/package.json\")",
+      "Bash(sed -i '/\"@gmaps-scraper\\\\/shared-types\"/d' \"d:/claude-code-projects/scraper/apps/frontend/package.json\")"
     ]
   }
 }
