@@ -20,9 +20,11 @@
     "playwright": "^1.49.1",
     "uuid": "^11.0.3",
     "xlsx": "^0.18.5",
+    "ws": "^8.18.0",
     "zod": "^3.24.1"
   },
   "devDependencies": {
+    "@types/ws": "^8.5.13",
     "@types/cors": "^2.8.17",
     "@types/express": "^5.0.0",
     "@types/node": "^22.10.5",

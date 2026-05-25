@@ -1,6 +1,9 @@
 [build]
 builder = "nixpacks"
-buildCommand = "npm install && npm run build --workspace=packages/shared-types && npm run build --workspace=apps/scraper-backend && npx --prefix apps/scraper-backend playwright install chromium --with-deps"
+buildCommand = "npm install && npm run build --workspace=packages/shared-types && npm run build --workspace=apps/scraper-backend && cd apps/scraper-backend && npx playwright install chromium --with-deps"
+
+[build.env]
+NIXPACKS_NODE_VERSION = "22"
 
 [deploy]
 startCommand = "node apps/scraper-backend/dist/index.js"
